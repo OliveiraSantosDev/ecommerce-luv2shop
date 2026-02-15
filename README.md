@@ -143,3 +143,6 @@ teste de commit 3
 Teste de commit 4 (Junto)
 
 Teste Commit Git...
+
+Teste Commit Git...2
+
