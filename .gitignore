@@ -1,0 +1,47 @@
+# =========================
+# SISTEMA / IDE
+# =========================
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Cursor / Claude
+.claude/
+
+# =========================
+# LOGS / TEMP
+# =========================
+*.log
+*.tmp
+
+# =========================
+# FRONTEND (Angular)
+# =========================
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+frontend/.cache/
+
+# =========================
+# BACKEND (Java / Spring Boot)
+# =========================
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
+
+# =========================
+# ARQUIVOS SENSÍVEIS (SECRETS)
+# =========================
+backend/src/main/resources/application.properties
+backend/src/main/resources/application-prod.properties
+backend/src/main/resources/application-dev.properties
+*.p12
+*.jks
+*.keystore
+
+# =========================
+# ENV
+# =========================
+.env
+.env.*
