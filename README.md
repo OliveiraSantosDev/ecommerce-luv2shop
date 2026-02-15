@@ -135,3 +135,5 @@ If you have any questions, suggestions, or just want to get in touch, you can re
 We appreciate your interest and look forward to your contributions and feedback!
 
 teste de commit.
+
+Teste de Commit 2.
