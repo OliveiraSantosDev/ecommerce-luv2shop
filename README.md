@@ -139,3 +139,5 @@ teste de commit.
 Teste de Commit 2.
 
 teste de commit 3
+
+Teste de commit 4 (Junto)

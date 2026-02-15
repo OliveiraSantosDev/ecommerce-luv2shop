@@ -29,3 +29,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 Teste de Commit 2
 
 teste de commit 3
+
+Teste de commit 4 (Junto)
