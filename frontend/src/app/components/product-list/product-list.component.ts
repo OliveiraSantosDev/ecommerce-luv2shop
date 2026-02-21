@@ -122,6 +122,7 @@ export class ProductListComponent implements OnInit {
   addToCart(product: Product) {
     const cartItem = new CartItem(product);
 
+    alert(`✅ Produto "${product.name}" adicionado ao carrinho!`);
     this.cartService.addToCart(cartItem);
   }
 }
