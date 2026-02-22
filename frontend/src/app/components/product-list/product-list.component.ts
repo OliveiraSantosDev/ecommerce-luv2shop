@@ -5,6 +5,7 @@ import { Product } from 'src/app/common/product';
 import { CartService } from 'src/app/services/cart.service';
 import { ProductService } from 'src/app/services/product.service';
 
+
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
@@ -17,6 +18,8 @@ export class ProductListComponent implements OnInit {
   previousCategoryId: number = 1;
   currentCategoryName: string = '';
   searchMode: boolean = false;
+  showToast: boolean = false;
+  toastMessage: string = '';
 
   // fields for pagination
   pageNumber: number = 1;
@@ -121,8 +124,17 @@ export class ProductListComponent implements OnInit {
 
   addToCart(product: Product) {
     const cartItem = new CartItem(product);
-
-    alert(`✅ Produto "${product.name}" adicionado ao carrinho!`);
     this.cartService.addToCart(cartItem);
+
+    // Define a mensagem
+    this.toastMessage = `Produto "${product.name}" adicionado ao carrinho!`;
+
+    // Mostra o toast
+    this.showToast = true;
+
+    // Esconde após 3 segundos
+    setTimeout(() => {
+      this.showToast = false;
+  }, 3000);
   }
 }
