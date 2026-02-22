@@ -31,12 +31,13 @@
             <div class="price">
               {{ tempProduct.unitPrice | currency : "USD" }}
             </div>
-            <button
-              (click)="addToCart(tempProduct)"
-              class="btn btn-primary btn-style"
-            >
-              Adicionar ao Carrinho
-            </button>
+                <button 
+                (click)="addToCart(tempProduct)"
+                class="btn"
+                [ngClass]="isProductInCart(tempProduct.id) ? 'btn-success' : 'btn-primary'"
+                [disabled]="isProductInCart(tempProduct.id)">
+                {{ isProductInCart(tempProduct.id) ? 'Adicionado ✔' : 'Adicionar ao Carrinho' }}
+                </button>
           </div>
         </div>
       </div>

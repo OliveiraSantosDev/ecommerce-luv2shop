@@ -137,4 +137,10 @@ export class ProductListComponent implements OnInit {
       this.showToast = false;
   }, 3000);
   }
+  //Valindo o Produto
+  isProductInCart(productId: string): boolean {
+  return this.cartService.cartItems.some(
+    item => item.id === productId
+  );
+  }
 }
