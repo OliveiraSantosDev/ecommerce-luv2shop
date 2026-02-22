@@ -31,7 +31,7 @@ ngb-pagination ::ng-deep .page-link:not(:disabled):not(.disabled):active:focus {
 }
 .custom-toast {
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
   background-color: #198754;
   color: white;
