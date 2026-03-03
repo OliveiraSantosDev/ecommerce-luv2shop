@@ -5,7 +5,7 @@ import { Product } from 'src/app/common/product';
 import { CartService } from 'src/app/services/cart.service';
 import { ProductService } from 'src/app/services/product.service';
 
-
+// Melhoria do botão carrinho - branch feature
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
